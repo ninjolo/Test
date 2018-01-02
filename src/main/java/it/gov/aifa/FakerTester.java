@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package it.aifa.gov;
+package it.gov.aifa;
 
 import com.github.javafaker.Faker;
 import java.util.Date;

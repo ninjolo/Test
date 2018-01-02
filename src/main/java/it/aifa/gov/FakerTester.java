@@ -6,6 +6,7 @@
 package it.aifa.gov;
 
 import com.github.javafaker.Faker;
+import java.util.Date;
 import java.util.Locale;
 
 /**
@@ -20,6 +21,8 @@ public class FakerTester {
         for (int i = 0; i < 10000; i++) {
             String firstName = faker.name().firstName(); // Emory
             System.out.println("nome: " + firstName);
+            Date data = faker.date().birthday();
+            System.out.println("Data di nascita: "+data);
             String lastName = faker.name().lastName(); // Barton
             System.out.println("cognome: " + lastName);
             String city = faker.address().city();

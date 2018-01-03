@@ -22,7 +22,7 @@ public class FakerTester {
             String firstName = faker.name().firstName(); // Emory
             System.out.println("nome: " + firstName);
             Date data = faker.date().birthday();
-            System.out.println("Data di nascita: "+data);
+            System.out.println("Data di nascita: " + data);
             String lastName = faker.name().lastName(); // Barton
             System.out.println("cognome: " + lastName);
             String city = faker.address().city();
@@ -30,8 +30,8 @@ public class FakerTester {
             String streetAddress = faker.address().streetAddress(); // 60018 Sawayn Brooks Suite 449
             System.out.println("indirizzo: " + streetAddress);
             String favRead = faker.book().title();
-            System.out.println("libro preferito: "+favRead);
-            System.out.println("Storia preferita: "+faker.chuckNorris().fact());
+            System.out.println("libro preferito: " + favRead);
+            System.out.println("Storia preferita: " + faker.chuckNorris().fact());
             System.out.println("--------------");
         }
 

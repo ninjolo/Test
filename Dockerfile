@@ -7,11 +7,10 @@ RUN mkdir "$WORKDIR"
 WORKDIR $WORKDIR
 
 COPY pom.xml .
-COPY lib/ lib/
 COPY src/ src/
 
 RUN mvn clean install
-RUN mv target/Test-1.0-SNAPSHOT.jar ./Test-1.0-SNAPSHOT.jar \
+RUN mv target/Test-1.0-SNAPSHOT-jar-with-dependencies.jar ./Test-1.0-SNAPSHOT-jar-with-dependencies.jar \
   && rm -rf target/ \
   && rm -rf pom.xml \
   && rm -rf lib/ \
